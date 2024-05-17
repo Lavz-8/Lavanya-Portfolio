@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Lavanya Project</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <style>
+    .slider {
+      position: relative;
+      width: 100%;
+      max-width: 1400px; /* Increased size */
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .images {
+      display: flex;
+      gap: 30px; /* Add space between images */
+      transition: transform 0.5s ease;
+      padding: 0 10px; /* Add padding to prevent images from being cut off */
+    }
+
+    .image-container {
+      flex: 0 0 calc(33.33% - 20px); /* Adjust width to account for gap */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      transition: transform 0.5s ease;
+    }
+
+    .image-container img {
+      width: 100%;
+      height: auto;
+      cursor: pointer;
+      transition: transform 0.5s ease;
+    }
+
+    .image-container .title {
+      margin-top: 10px;
+      font-size: 1.2em;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .image-container .button {
+      margin-top: 10px;
+      padding: 10px 20px;
+      background-color: #34b7a7;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .image-container .button:hover {
+      background-color: #1e5e57;
+    }
+
+    .arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 2em;
+      color: #34b7a7;
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 10px;
+      cursor: pointer;
+      z-index: 1;
+      border-radius: 50%;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      user-select: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .arrow:hover {
+      background-color: rgba(255, 255, 255, 1);
+    }
+
+    .left {
+      left: 10px;
+    }
+
+    .right {
+      right: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container-fluid d-flex justify-content-between align-items-center">
+
+      <a href="index.html" class="logo"><img src="assets/img/favicon.png" alt="" class="img-fluid"></a>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a class="active" href="portfolio.html">Project</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+      <div class="header-social-links">
+        <a href="https://twitter.com/Lavz_8" class="twitter"><i class="bi bi-twitter"></i></a>
+        <a href="https://github.com/Lavz-8" class="github"><i class="bi bi-github"></i></i></a>
+        <a href="https://www.instagram.com/essences_of_lavanya/" class="instagram"><i class="bi bi-instagram"></i></i></a>
+        <a href="https://www.linkedin.com/in/lavanya-varadharajan-0a6753237/" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+      </div>
+
+    </div>
+
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Project</h2>
+          <p>Welcome to my portfolio showcase, where I exhibit some of the technical projects I've undertaken using Python, HTML, CSS, and JavaScript. Each project showcases my expertise in various technologies and my passion for solving real-world problems through innovative solutions. From computer vision systems to web applications, I've explored diverse domains to push the boundaries of technology.</p>
+        </div>
+
+        <div class="slider">
+          <span class="arrow left" onclick="moveLeft()">&#60;</span>
+          <div class="images">
+            <div class="image-container">
+              <div class="title">Driver Attention Assist System</div>
+              <img src="E:/Lavz_portfolio/img/img-1.jpg" alt="Image 1" onclick="openImage('https://github.com/Lavz-8/Driver-Attention-Assist-System')">
+              <button class="button" onclick="openImage('https://github.com/Lavz-8/Driver-Attention-Assist-System')">Github</button>
+            </div>
+            <div class="image-container">
+              <div class="title">PyBlock Polls</div>
+              <img src="E:/Lavz_portfolio/img/img-2.jpg" alt="Image 2" onclick="openImage('https://github.com/Lavz-8/PyBlock-Polls')">
+              <button class="button" onclick="openImage('https://github.com/Lavz-8/PyBlock-Polls')">Github</button>
+            </div>
+            <div class="image-container">
+              <div class="title">Face Regocnition</div>
+              <img src="E:/Lavz_portfolio/img/img-3.jpg" alt="Image 3" onclick="openImage('https://github.com/Lavz-8/Face-Recognition-using-Deep-Face-technology')">
+              <button class="button" onclick="openImage('https://github.com/Lavz-8/Face-Recognition-using-Deep-Face-technology')">Github</button>
+            </div>
+            <div class="image-container">
+              <div class="title">OTP Generation & Verification</div>
+              <img src="E:/Lavz_portfolio/img/img-4.jpg" alt="Image 4" onclick="openImage('https://github.com/Lavz-8/otp-verification')">
+              <button class="button" onclick="openImage('https://github.com/Lavz-8/otp-verification')">Github</button>
+            </div>
+            <div class="image-container">
+              <div class="title">To-Do List</div>
+              <img src="E:/Lavz_portfolio/img/img-5.jpg" alt="Image 5" onclick="openImage('https://github.com/Lavz-8/To-Do-list')">
+              <button class="button" onclick="openImage('https://github.com/Lavz-8/To-Do-list')">Github</button>
+            </div>
+            <div class="image-container">
+              <div class="title">3D Models</div>
+              <img src="E:/Lavz_portfolio/img/img-6.png" alt="Image 6" onclick="openImage('https://www.linkedin.com/feed/update/urn:li:activity:7116006896767008769/')">
+              <button class="button" onclick="openImage('https://www.linkedin.com/feed/update/urn:li:activity:7116006896767008769/')">linkedin</button>
+            </div>
+          </div>
+          <span class="arrow right" onclick="moveRight()">&#62;</span>
+        </div>
+      </div>
+    </section><!-- End Portfolio Section -->
+
+  </main><!-- End #main -->
+
+  
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script>
+    let currentIndex = 1;
+
+    function moveLeft() {
+      const totalImages = document.querySelectorAll('.image-container').length;
+      currentIndex = (currentIndex > 0) ? currentIndex - 1 : totalImages - 1;
+      updateSlider();
+    }
+
+    function moveRight() {
+      const totalImages = document.querySelectorAll('.image-container').length;
+      currentIndex = (currentIndex < totalImages - 1) ? currentIndex + 1 : 0;
+      updateSlider();
+    }
+
+    function updateSlider() {
+      const images = document.querySelector('.images');
+      const imageContainers = document.querySelectorAll('.image-container');
+      const sliderWidth = document.querySelector('.slider').clientWidth;
+      const transformValue = -currentIndex * (sliderWidth / 3);
+      images.style.transform = `translateX(${transformValue}px)`;
+
+      imageContainers.forEach((container, index) => {
+        if (index === currentIndex) {
+          container.classList.add('center');
+        } else {
+          container.classList.remove('center');
+        }
+      });
+    }
+
+    function openImage(imageUrl) {
+      window.open(imageUrl, '_blank');
+    }
+
+    // Clone images to create infinite loop effect
+    const imagesContainer = document.querySelector('.images');
+    const clones = Array.from(imagesContainer.children).map(child => child.cloneNode(true));
+    clones.forEach(clone => imagesContainer.appendChild(clone));
+    
+    // Initialize the slider
+    updateSlider();
+
+    // Automatically move right every 10 seconds
+    setInterval(moveRight, 6000);
+  </script>
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Lavanya</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        Designed by <a href="https://www.linkedin.com/in/lavanya-varadharajan-0a6753237/">Lavanya Varadharajan</a>
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+
+</body>
+
+</html>
