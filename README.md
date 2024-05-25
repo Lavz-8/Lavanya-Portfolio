@@ -4,10 +4,10 @@
 Welcome to my portfolio showcase, where I exhibit some of the technical projects I've undertaken using Python, HTML, CSS, and JavaScript. Each project showcases my expertise in various technologies and my passion for solving real-world problems through innovative solutions. My projects range from computer vision systems to web applications, demonstrating a wide array of skills and successful implementations.
 
 ## Features
-- **Diverse Projects:** A variety of projects demonstrating skills in different domains.
-- **Detailed Documentation:** Each project includes detailed documentation on implementation and usage.
-- **Real-world Solutions:** Projects designed to address real-world problems with innovative solutions.
-- **Interactive Demos:** Some projects include live demos or interactive elements.
+    - **Diverse Projects:** A variety of projects demonstrating skills in different domains.
+    - **Detailed Documentation:** Each project includes detailed documentation on implementation and usage.
+    - **Real-world Solutions:** Projects designed to address real-world problems with innovative solutions.
+    - **Interactive Demos:** Some projects include live demos or interactive elements.
 
 ## Installation
 For each project, specific installation instructions are provided in the respective project repository. Generally, the steps are:
@@ -35,12 +35,12 @@ Each project repository includes detailed usage instructions. Generally, the ste
 
 1. **Run the project:**
 
-- For Python projects, run the main script using `python script.py`.
-- For web projects, open the `index.html` file in a web browser.
+    - For Python projects, run the main script using `python script.py`.
+    - For web projects, open the `index.html` file in a web browser.
 
 2. **Interact with the project:**
 
-- Follow the specific guidelines provided in each project's documentation.
+    - Follow the specific guidelines provided in each project's documentation.
   
 ## Contributing
 Contributions are welcome! Feel free to open issues or submit pull requests for any project. Your contributions help make the projects better and more robust.
