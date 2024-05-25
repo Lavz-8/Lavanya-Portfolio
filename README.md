@@ -28,7 +28,7 @@ For each project, specific installation instructions are provided in the respect
 3. **Follow specific project instructions:**
 
     - For Python projects, install the required packages using pip.
-    - For web projects, simply open the index.html file in a web browser.
+    - For web projects, simply open the `index.html` file in a web browser.
   
 ## Usage
 Each project repository includes detailed usage instructions. Generally, the steps are:
