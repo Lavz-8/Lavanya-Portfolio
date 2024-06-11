@@ -41,6 +41,10 @@ Each project repository includes detailed usage instructions. Generally, the ste
 2. **Interact with the project:**
 
     - Follow the specific guidelines provided in each project's documentation.
+
+## Output
+![portfolio](https://github.com/Lavz-8/Lavanya-Portfolio/assets/145861363/c9ea6ce4-e90a-4bcf-82a6-605df66847bb)
+![Screenshot 2024-05-17 160706](https://github.com/Lavz-8/Lavanya-Portfolio/assets/145861363/3b2cd13e-1c1d-4194-8415-50e6f68ff272)
   
 ## Contributing
 Contributions are welcome! Feel free to open issues or submit pull requests for any project. Your contributions help make the projects better and more robust.
